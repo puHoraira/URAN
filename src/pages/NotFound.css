@@ -1,0 +1,21 @@
+.not-found {
+  min-height: 55vh;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  background: var(--bg-secondary);
+}
+
+.not-found .section-eyebrow {
+  margin-bottom: var(--space-md);
+}
+
+.not-found h1 {
+  margin-bottom: var(--space-md);
+}
+
+.not-found p:not(.section-eyebrow) {
+  max-width: 36rem;
+  margin: 0 auto var(--space-xl);
+  color: var(--text-secondary);
+}

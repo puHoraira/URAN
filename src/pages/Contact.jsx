@@ -3,6 +3,7 @@ import './Contact.css'
 
 function Contact() {
   const [submitted, setSubmitted] = useState(false)
+  const [isSubmitting, setIsSubmitting] = useState(false)
 
   return (
     <>
@@ -104,9 +105,7 @@ function Contact() {
                   method="POST"
                   target="google-form-submit"
                   className="contact-form"
-                  onSubmit={() => {
-                    window.setTimeout(() => setSubmitted(true), 800)
-                  }}
+                  onSubmit={() => setIsSubmitting(true)}
                 >
                   <p className="contact-form-intro">
                     Tell us about your interest in UAV research, collaboration, or joining the group.
@@ -163,7 +162,7 @@ function Contact() {
                     <span className="form-help">Optional. Paste a Google Drive, GitHub, LinkedIn, or portfolio link.</span>
                   </div>
 
-                  <button type="submit" className="btn btn-accent">
+                  <button type="submit" className="btn btn-accent" disabled={isSubmitting}>
                     Submit message
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                       <line x1="22" y1="2" x2="11" y2="13" />
@@ -172,7 +171,17 @@ function Contact() {
                   </button>
                 </form>
               )}
-              <iframe name="google-form-submit" title="Google Form submission" className="form-submit-frame" />
+              <iframe
+                name="google-form-submit"
+                title="Google Form submission"
+                className="form-submit-frame"
+                onLoad={() => {
+                  if (isSubmitting) {
+                    setIsSubmitting(false)
+                    setSubmitted(true)
+                  }
+                }}
+              />
             </div>
           </div>
         </div>

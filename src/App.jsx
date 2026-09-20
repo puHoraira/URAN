@@ -1,5 +1,5 @@
 import { useEffect } from 'react'
-import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom'
+import { HashRouter, Routes, Route, useLocation } from 'react-router-dom'
 import Navbar from './components/Navbar.jsx'
 import Footer from './components/Footer.jsx'
 import Home from './pages/Home.jsx'
@@ -13,6 +13,7 @@ import News from './pages/News.jsx'
 import Notices from './pages/Notices.jsx'
 import Gallery from './pages/Gallery.jsx'
 import Contact from './pages/Contact.jsx'
+import NotFound from './pages/NotFound.jsx'
 
 function ScrollToTop() {
   const { pathname } = useLocation()
@@ -30,7 +31,7 @@ function App() {
     : import.meta.env.BASE_URL.replace(/\/$/, '')
 
   return (
-    <BrowserRouter basename={basename}>
+    <HashRouter basename={basename}>
       <ScrollToTop />
       <Navbar />
       <main>
@@ -46,10 +47,11 @@ function App() {
           <Route path="/notices" element={<Notices />} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </main>
       <Footer />
-    </BrowserRouter>
+    </HashRouter>
   )
 }
 
