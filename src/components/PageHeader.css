@@ -1,0 +1,47 @@
+/* ============================================
+   PAGE HEADER - PROFESSIONAL DESIGN
+   ============================================ */
+
+.page-header {
+  position: relative;
+  background: linear-gradient(135deg, var(--primary) 0%, #2B5278 100%);
+  padding: clamp(4rem, 10vw, 6rem) 0 clamp(3rem, 8vw, 5rem);
+  overflow: hidden;
+}
+
+.page-header::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: 
+    linear-gradient(rgba(59, 130, 246, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(59, 130, 246, 0.05) 1px, transparent 1px);
+  background-size: 40px 40px;
+  mask-image: radial-gradient(ellipse 80% 50% at 50% 50%, black 40%, transparent 100%);
+}
+
+.page-header .container {
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.page-header .section-eyebrow {
+  color: #93C5FD;
+  background: rgba(59, 130, 246, 0.1);
+  border: 1px solid rgba(59, 130, 246, 0.2);
+}
+
+.page-header h1 {
+  color: #FFFFFF;
+  margin-bottom: var(--space-lg);
+}
+
+.page-header__desc {
+  font-size: 1.125rem;
+  line-height: 1.7;
+  color: #CBD5E1;
+  margin: 0;
+}

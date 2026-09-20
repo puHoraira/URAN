@@ -1,0 +1,140 @@
+/* ============================================
+   FOOTER - PROFESSIONAL DESIGN
+   ============================================ */
+
+.footer {
+  background: linear-gradient(135deg, var(--primary) 0%, #0A1628 100%);
+  color: #E2E8F0;
+  margin-top: auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.footer::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: 
+    linear-gradient(rgba(59, 130, 246, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(59, 130, 246, 0.03) 1px, transparent 1px);
+  background-size: 40px 40px;
+  pointer-events: none;
+}
+
+.footer__inner {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr;
+  gap: var(--space-3xl);
+  padding: var(--space-4xl) 0 var(--space-3xl);
+}
+
+/* Footer Brand */
+.footer__brand {
+  max-width: 400px;
+}
+
+.footer__mark {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  color: #FFFFFF;
+  white-space: nowrap;
+  margin-bottom: var(--space-sm);
+  display: block;
+}
+
+.footer__mark-accent {
+  color: var(--accent-light);
+}
+
+.footer__sub {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #93C5FD;
+  margin-bottom: var(--space-lg);
+}
+
+.footer__addr {
+  font-size: 0.9375rem;
+  line-height: 1.7;
+  color: #CBD5E1;
+  margin: 0;
+}
+
+/* Footer Links */
+.footer__links {
+  display: contents;
+}
+
+.footer__links > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__links h4 {
+  font-size: 0.875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #FFFFFF;
+  margin-bottom: var(--space-lg);
+}
+
+.footer__links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.footer__links a {
+  color: #CBD5E1;
+  font-size: 0.9375rem;
+  transition: color var(--transition-fast);
+  text-decoration: none;
+}
+
+.footer__links a:hover {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+/* Footer Bottom */
+.footer__bottom {
+  position: relative;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding: var(--space-xl) 0;
+}
+
+.footer__bottom p {
+  text-align: center;
+  font-size: 0.875rem;
+  color: #94A3B8;
+  margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .footer__inner {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .footer__brand {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 640px) {
+  .footer__inner {
+    grid-template-columns: 1fr;
+    gap: var(--space-2xl);
+  }
+
+  .footer__brand {
+    grid-column: 1;
+  }
+}

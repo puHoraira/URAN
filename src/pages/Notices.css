@@ -1,0 +1,59 @@
+.notices-header {
+  padding: clamp(4rem, 9vw, 7rem) 0 clamp(3rem, 7vw, 5rem);
+  background: linear-gradient(135deg, var(--primary) 0%, #1b4d63 100%);
+  color: var(--text-inverse);
+}
+
+.notices-header__content {
+  max-width: 820px;
+}
+
+.notices-header h1 {
+  margin: var(--space-md) 0 var(--space-lg);
+  color: var(--text-inverse);
+}
+
+.notices-header p {
+  margin: 0;
+  color: #d8e6e8;
+  font-size: 1.1rem;
+  line-height: 1.75;
+}
+
+.notices-section {
+  background: var(--bg-secondary);
+}
+
+.notices-list {
+  display: grid;
+  gap: var(--space-lg);
+  max-width: 820px;
+}
+
+.notice-card {
+  padding: var(--space-2xl);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-lg);
+  background: var(--bg-primary);
+  box-shadow: var(--shadow-sm);
+}
+
+.notice-card > span {
+  color: var(--accent);
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.notice-card h2 {
+  margin: var(--space-md) 0 var(--space-sm);
+  font-size: 1.35rem;
+}
+
+.notice-card p {
+  margin: 0;
+  color: var(--text-secondary);
+  line-height: 1.7;
+}

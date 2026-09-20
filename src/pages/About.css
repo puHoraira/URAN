@@ -1,0 +1,296 @@
+/* ============================================
+   ABOUT PAGE - CLEAN & COMPACT DESIGN
+   ============================================ */
+
+/* About Header */
+.about-header {
+  position: relative;
+  background: linear-gradient(135deg, var(--primary) 0%, #2B5278 100%);
+  padding: clamp(3rem, 8vw, 5rem) 0 clamp(2rem, 6vw, 4rem);
+  overflow: hidden;
+}
+
+.about-header-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.about-grid {
+  position: absolute;
+  inset: 0;
+  background-image: 
+    linear-gradient(rgba(59, 130, 246, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(59, 130, 246, 0.05) 1px, transparent 1px);
+  background-size: 40px 40px;
+  mask-image: radial-gradient(ellipse 80% 50% at 50% 50%, black 40%, transparent 100%);
+}
+
+.about-header-content {
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about-header h1 {
+  color: #FFFFFF;
+  margin-bottom: var(--space-md);
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
+}
+
+.about-header-desc {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #CBD5E1;
+  margin-bottom: var(--space-sm);
+}
+
+/* Simple Title */
+.simple-title {
+  font-size: 1.5rem;
+  color: var(--text-primary);
+  margin-bottom: var(--space-xl);
+  padding-bottom: var(--space-md);
+  border-bottom: 2px solid var(--border-light);
+}
+
+/* Supervisor Section */
+.supervisor-section {
+  background: var(--bg-secondary);
+  padding: var(--space-3xl) 0;
+}
+
+.supervisor-card {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  gap: var(--space-xl);
+  background: var(--bg-primary);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-lg);
+  padding: var(--space-xl);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.supervisor-avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--accent) 0%, var(--accent-light) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #FFFFFF;
+  letter-spacing: 2px;
+  box-shadow: var(--shadow-lg);
+  flex-shrink: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.supervisor-avatar img,
+.student-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.supervisor-avatar span,
+.student-avatar span {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.supervisor-info h3 {
+  font-size: 1.375rem;
+  color: var(--text-primary);
+  margin-bottom: var(--space-xs);
+}
+
+.supervisor-role {
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: var(--accent);
+  margin-bottom: var(--space-xs);
+}
+
+.supervisor-dept {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  margin-bottom: var(--space-lg);
+}
+
+.supervisor-contact {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+}
+
+.contact-link {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-xs);
+  padding: 0.5rem 0.875rem;
+  background: var(--bg-tertiary);
+  border: 1px solid var(--blue-200);
+  border-radius: var(--radius-md);
+  color: var(--accent);
+  font-size: 0.875rem;
+  font-weight: 600;
+  transition: all var(--transition-base);
+  text-decoration: none;
+}
+
+.contact-link:hover {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #FFFFFF;
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-sm);
+}
+
+/* Students Section */
+.students-section {
+  background: var(--bg-primary);
+  padding: var(--space-3xl) 0;
+}
+
+.students-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: var(--space-lg);
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.student-card {
+  background: var(--bg-primary);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-lg);
+  padding: var(--space-lg);
+  text-align: center;
+  transition: all var(--transition-base);
+}
+
+.student-card:hover {
+  border-color: var(--border-medium);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+
+.student-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--accent) 0%, var(--accent-light) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #FFFFFF;
+  letter-spacing: 1px;
+  margin: 0 auto var(--space-md);
+  box-shadow: var(--shadow-md);
+  position: relative;
+  overflow: hidden;
+}
+
+.student-card h3 {
+  font-size: 1rem;
+  color: var(--text-primary);
+  margin-bottom: var(--space-xs);
+}
+
+.student-role {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--accent);
+  margin-bottom: var(--space-sm);
+}
+
+.student-focus {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  line-height: 1.4;
+  margin-bottom: var(--space-md);
+}
+
+.student-socials {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-xs);
+  padding-top: var(--space-md);
+  border-top: 1px solid var(--border-light);
+}
+
+.student-socials a {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: var(--bg-tertiary);
+  border: 1px solid var(--blue-200);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent);
+  transition: all var(--transition-base);
+}
+
+.student-socials a:hover {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #FFFFFF;
+  transform: translateY(-2px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-header {
+    padding: 2rem 0 1.5rem;
+  }
+  
+  .supervisor-card {
+    grid-template-columns: 1fr;
+    text-align: center;
+    padding: var(--space-lg);
+  }
+  
+  .supervisor-avatar {
+    width: 100px;
+    height: 100px;
+    font-size: 2rem;
+    margin: 0 auto var(--space-lg);
+  }
+  
+  .supervisor-contact {
+    justify-content: center;
+  }
+  
+  .students-grid {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+  
+  .simple-title {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .students-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .supervisor-card {
+    padding: var(--space-md);
+  }
+}
