@@ -18,7 +18,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem 0;
+  padding-block: 1rem;
   gap: var(--space-xl);
 }
 
@@ -27,6 +27,7 @@
   display: none;
   flex-direction: column;
   justify-content: center;
+  flex-shrink: 0;
   gap: 5px;
   width: 40px;
   height: 40px;
@@ -172,10 +173,12 @@
   }
 
   .navbar__links {
-    position: fixed;
+    position: absolute;
     top: calc(100% + 1px);
     left: 0;
     right: 0;
+    max-height: calc(100dvh - 76px);
+    overflow-y: auto;
     background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(16px);
     -webkit-backdrop-filter: blur(16px);
