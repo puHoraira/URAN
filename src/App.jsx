@@ -26,12 +26,8 @@ function ScrollToTop() {
 }
 
 function App() {
-  const basename = import.meta.env.BASE_URL === '/'
-    ? undefined
-    : import.meta.env.BASE_URL.replace(/\/$/, '')
-
   return (
-    <HashRouter basename={basename}>
+    <HashRouter>
       <ScrollToTop />
       <Navbar />
       <main>
