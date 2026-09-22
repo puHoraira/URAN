@@ -933,6 +933,17 @@
   margin: 0;
 }
 
+.join-section .btn-accent {
+  background: #dbeafe;
+  color: #163b5c;
+  border: 1px solid #bfdbfe;
+}
+
+.join-section .btn-accent:hover {
+  background: #ffffff;
+  color: #102a43;
+}
+
 /* Responsive Design */
 @media (max-width: 1024px) {
   .featured-card {
