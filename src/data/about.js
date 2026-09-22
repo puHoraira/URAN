@@ -48,9 +48,7 @@ export const mscStudents = [
     role: 'MSc Student',
     focus: 'UAV Navigation Systems',
     image: assetPath('/team/mridul.jpg'),
-    email: 'mdabu-2021911202@cs.du.ac.bd',
-    linkedin: '#',
-    github: '#'
+    email: 'saifhossain@kaist.ac.kr'
   }
 ]
 
@@ -61,18 +59,13 @@ export const bscStudents = [
     focus: 'Autonomous Flight Control',
     image: assetPath('/horaira.png'),
     email: 'mdabu-2021911202@cs.du.ac.bd',
-    linkedin: '#',
-    github: '#',
-    facebook: '#'
+    github: 'https://github.com/puHoraira'
   },
   {
     name: 'Md Adib Ahsan',
     role: 'BSc Student',
     focus: 'Computer Vision for Drones',
     image: assetPath('/team/adib.jpg'),
-    email: 'mdabu-2021911202@cs.du.ac.bd',
-    linkedin: '#',
-    github: '#',
-    facebook: '#'
+    email: 'adibahsan003@gmail.com',
   }
 ]

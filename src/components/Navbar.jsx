@@ -77,9 +77,6 @@ function Navbar() {
               ))}
             </div>
           </div>
-          <NavLink to="/contact" className="btn btn--primary navbar__cta" onClick={closeMenus}>
-            Join Us
-          </NavLink>
         </nav>
       </div>
     </header>
