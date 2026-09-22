@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import Logo from './Logo.jsx'
 import './Footer.css'
 
 function Footer() {
@@ -8,10 +9,7 @@ function Footer() {
     <footer className="footer">
       <div className="container footer__inner">
         <div className="footer__brand">
-          <span className="footer__mark">
-            UR<span className="footer__mark-accent">A</span>N
-          </span>
-          <p className="footer__sub">UAV Research and Autonomous Navigation</p>
+          <Logo />
           <p className="footer__addr">
             Department of Computer Science and Engineering
             <br />

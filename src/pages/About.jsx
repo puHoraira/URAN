@@ -1,6 +1,7 @@
 import { 
   groupInfo,
   principalInvestigator, 
+  technicalOfficers,
   mscStudents, 
   bscStudents 
 } from '../data/about.js'
@@ -164,6 +165,46 @@ function About() {
           </div>
         </div>
       </section>
+
+      {/* Technical Officers */}
+      {technicalOfficers.length > 0 && (
+        <section className="section students-section">
+          <div className="container">
+            <h2 className="simple-title">Lab Technical Officer</h2>
+            <div className="students-grid">
+              {technicalOfficers.map((officer) => (
+                <div className="student-card" key={officer.name}>
+                  <div className="student-avatar">
+                    {officer.image && <img src={officer.image} alt={officer.name} onError={(event) => { event.currentTarget.style.display = 'none'; event.currentTarget.nextElementSibling.style.display = 'flex' }} />}
+                    <span>{officer.name.split(' ').map(n => n[0]).join('').slice(0, 2)}</span>
+                  </div>
+
+                  <h3>{officer.name}</h3>
+                  <p className="student-role">{officer.role}</p>
+                  <p className="student-focus">{officer.focus}</p>
+
+                  <div className="student-socials">
+                    {officer.facebook && (
+                      <a href={officer.facebook} title="Facebook" target="_blank" rel="noopener noreferrer">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                          <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/>
+                        </svg>
+                      </a>
+                    )}
+                    {officer.youtube && (
+                      <a href={officer.youtube} title="YouTube" target="_blank" rel="noopener noreferrer">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                          <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.376.505A3.016 3.016 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.376-.505a3.016 3.016 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                        </svg>
+                      </a>
+                    )}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
     </>
   )
 }

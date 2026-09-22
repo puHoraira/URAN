@@ -61,6 +61,9 @@
   --font-sans: 'Avenir Next', 'Segoe UI', 'Helvetica Neue', sans-serif;
   --font-mono: 'Cascadia Code', 'Courier New', monospace;
   --font-display: 'Avenir Next', 'Segoe UI', 'Helvetica Neue', sans-serif;
+  --navy: #2f7ac2;
+  --sans: 'Inter', system-ui, 'Segoe UI', Roboto, sans-serif;
+  --logo-font: 'Petitinho', var(--sans);
   
   /* Spacing Scale */
   --space-xs: 0.25rem;

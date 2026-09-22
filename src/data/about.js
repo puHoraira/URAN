@@ -31,6 +31,17 @@ export const principalInvestigator = {
   academia: 'https://concordia.academia.edu/MosaddekHossainKamalTushar'
 }
 
+export const technicalOfficers = [
+  {
+    name: 'Masud Rana',
+    role: 'Lab Technical Officer',
+    focus: 'Laboratory Technical Support',
+    image: assetPath('/masudRanaLab.png'),
+    facebook: 'https://www.facebook.com/masud.rana.599559',
+    youtube: 'https://www.youtube.com/@masud58'
+  }
+]
+
 export const mscStudents = [
   {
     name: 'Saif Hossain Mridul',
