@@ -173,9 +173,9 @@ function Home() {
               <div className="stat-desc">Mission-adaptive autonomy platform</div>
             </div>
             <div className="stat-card">
-              <div className="stat-value">02</div>
-              <div className="stat-label">Test environments</div>
-              <div className="stat-desc">Indoor and outdoor flight work</div>
+              <div className="stat-value">03</div>
+              <div className="stat-label">Autonomy pillars</div>
+              <div className="stat-desc">Perceive, decide, and act</div>
             </div>
             
           </div>

@@ -2,7 +2,7 @@
   position: relative;
   overflow: hidden;
   padding: clamp(4rem, 9vw, 7rem) 0 clamp(3rem, 7vw, 5rem);
-  background: linear-gradient(135deg, var(--primary) 0%, #1b4d63 100%);
+  background: var(--primary);
   color: var(--text-inverse);
 }
 
@@ -31,7 +31,7 @@
 .projects-header p {
   max-width: 680px;
   margin: 0;
-  color: #d8e6e8;
+  color: #dbeafe;
   font-size: 1.125rem;
   line-height: 1.75;
 }

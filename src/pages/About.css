@@ -5,7 +5,7 @@
 /* About Header */
 .about-header {
   position: relative;
-  background: linear-gradient(135deg, var(--primary) 0%, #2B5278 100%);
+  background: var(--primary);
   padding: clamp(3rem, 8vw, 5rem) 0 clamp(2rem, 6vw, 4rem);
   overflow: hidden;
 }
@@ -14,16 +14,6 @@
   position: absolute;
   inset: 0;
   z-index: 0;
-}
-
-.about-grid {
-  position: absolute;
-  inset: 0;
-  background-image: 
-    linear-gradient(rgba(59, 130, 246, 0.05) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(59, 130, 246, 0.05) 1px, transparent 1px);
-  background-size: 40px 40px;
-  mask-image: radial-gradient(ellipse 80% 50% at 50% 50%, black 40%, transparent 100%);
 }
 
 .about-header-content {
@@ -78,7 +68,7 @@
   width: 120px;
   height: 120px;
   border-radius: 50%;
-  background: linear-gradient(135deg, var(--accent) 0%, var(--accent-light) 100%);
+  background: var(--accent);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -189,7 +179,7 @@
   width: 80px;
   height: 80px;
   border-radius: 50%;
-  background: linear-gradient(135deg, var(--accent) 0%, var(--accent-light) 100%);
+  background: var(--accent);
   display: flex;
   align-items: center;
   justify-content: center;

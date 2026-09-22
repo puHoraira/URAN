@@ -3,22 +3,11 @@
    ============================================ */
 
 .footer {
-  background: linear-gradient(135deg, #dceaf6 0%, #c4d9eb 100%);
+  background: #dceaf6;
   color: #000000;
   margin-top: auto;
   position: relative;
   overflow: hidden;
-}
-
-.footer::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background-image: 
-    linear-gradient(rgba(47, 122, 194, 0.08) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(47, 122, 194, 0.08) 1px, transparent 1px);
-  background-size: 40px 40px;
-  pointer-events: none;
 }
 
 .footer__inner {

@@ -5,7 +5,7 @@
 /* Contact Header */
 .contact-header {
   position: relative;
-  background: linear-gradient(135deg, var(--primary) 0%, #2B5278 100%);
+  background: var(--primary);
   padding: clamp(4rem, 10vw, 6rem) 0 clamp(3rem, 8vw, 5rem);
   overflow: hidden;
 }
@@ -14,16 +14,6 @@
   position: absolute;
   inset: 0;
   z-index: 0;
-}
-
-.contact-grid-bg {
-  position: absolute;
-  inset: 0;
-  background-image: 
-    linear-gradient(rgba(59, 130, 246, 0.05) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(59, 130, 246, 0.05) 1px, transparent 1px);
-  background-size: 40px 40px;
-  mask-image: radial-gradient(ellipse 80% 50% at 50% 50%, black 40%, transparent 100%);
 }
 
 .contact-header-content {
@@ -90,7 +80,7 @@
   width: 48px;
   height: 48px;
   border-radius: var(--radius-lg);
-  background: linear-gradient(135deg, var(--accent) 0%, var(--accent-light) 100%);
+  background: var(--accent);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -108,6 +98,10 @@
   color: var(--text-secondary);
   line-height: 1.6;
   margin: 0;
+}
+
+.info-item:first-child .info-content p {
+  color: #1e4f7a;
 }
 
 .info-content a {

@@ -38,15 +38,15 @@
   --amber-400: #FBBF24;
   
   /* Semantic Tokens */
-  --primary: #102a43;
+  --primary: #1e4f7a;
   --primary-hover: #0b1f33;
-  --accent: #0f766e;
-  --accent-hover: #115e59;
-  --accent-light: #2a9d8f;
+  --accent: #1e4f7a;
+  --accent-hover: #163b5c;
+  --accent-light: #2f6f9f;
   
   --bg-primary: #fffdf8;
   --bg-secondary: #f4f1e9;
-  --bg-tertiary: #e5f3ef;
+  --bg-tertiary: #eff6ff;
   
   --text-primary: var(--slate-900);
   --text-secondary: var(--slate-700);
@@ -121,8 +121,6 @@ body {
   line-height: 1.6;
   color: var(--text-primary);
   background: var(--bg-primary);
-  background-image: radial-gradient(rgba(16, 42, 67, 0.06) 0.7px, transparent 0.7px);
-  background-size: 18px 18px;
 }
 
 /* Typography */

@@ -5,7 +5,7 @@
 /* Publications Header */
 .publications-header {
   position: relative;
-  background: linear-gradient(135deg, var(--primary) 0%, #2B5278 100%);
+  background: var(--primary);
   padding: clamp(4rem, 10vw, 6rem) 0 clamp(3rem, 8vw, 5rem);
   overflow: hidden;
 }
@@ -14,16 +14,6 @@
   position: absolute;
   inset: 0;
   z-index: 0;
-}
-
-.publications-grid {
-  position: absolute;
-  inset: 0;
-  background-image: 
-    linear-gradient(rgba(59, 130, 246, 0.05) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(59, 130, 246, 0.05) 1px, transparent 1px);
-  background-size: 40px 40px;
-  mask-image: radial-gradient(ellipse 80% 50% at 50% 50%, black 40%, transparent 100%);
 }
 
 .publications-header-content {

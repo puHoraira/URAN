@@ -9,49 +9,13 @@
   display: flex;
   align-items: center;
   overflow: hidden;
-  background: linear-gradient(135deg, #0A1628 0%, #1A3A5C 100%);
+  background: var(--primary);
 }
 
 .hero-bg {
   position: absolute;
   inset: 0;
   z-index: 0;
-}
-
-.hero-grid {
-  position: absolute;
-  inset: 0;
-  background-image: 
-    linear-gradient(rgba(59, 130, 246, 0.05) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(59, 130, 246, 0.05) 1px, transparent 1px);
-  background-size: 50px 50px;
-  mask-image: radial-gradient(ellipse 80% 50% at 50% 50%, black 40%, transparent 100%);
-}
-
-.hero-gradient {
-  position: absolute;
-  border-radius: 50%;
-  filter: blur(80px);
-  opacity: 0.3;
-  animation: float 8s ease-in-out infinite;
-}
-
-.hero-gradient-1 {
-  width: 500px;
-  height: 500px;
-  background: radial-gradient(circle, #3B82F6 0%, transparent 70%);
-  top: -10%;
-  left: -5%;
-  animation-delay: 0s;
-}
-
-.hero-gradient-2 {
-  width: 400px;
-  height: 400px;
-  background: radial-gradient(circle, #2563EB 0%, transparent 70%);
-  bottom: -10%;
-  right: -5%;
-  animation-delay: 4s;
 }
 
 @keyframes float {
@@ -155,7 +119,7 @@
   overflow: hidden;
   border: 1px solid rgba(146, 215, 207, 0.35);
   border-radius: var(--radius-2xl);
-  background: #dce5df;
+  background: #dbeafe;
   box-shadow: 0 24px 60px rgba(3, 19, 35, 0.28);
   animation: reelFloat 7s ease-in-out infinite;
 }
@@ -239,7 +203,7 @@
 }
 
 .hero-flight-reel__progress button.is-active {
-  background: #7ef1d5;
+  background: #60a5fa;
   transform: scale(1.45);
 }
 
@@ -263,30 +227,6 @@
   overflow: hidden;
 }
 
-.hero-visual-card::before {
-  content: '';
-  position: absolute;
-  inset: 22px;
-  z-index: 0;
-  opacity: 0.35;
-  background-image: linear-gradient(rgba(105, 168, 255, 0.14) 1px, transparent 1px), linear-gradient(90deg, rgba(105, 168, 255, 0.14) 1px, transparent 1px);
-  background-size: 32px 32px;
-  mask-image: radial-gradient(circle, black 30%, transparent 78%);
-  animation: gridDrift 10s linear infinite;
-}
-
-.hero-visual-card::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  z-index: 4;
-  pointer-events: none;
-  background: linear-gradient(transparent 48%, rgba(126, 241, 213, 0.08) 50%, transparent 52%);
-  background-size: 100% 18px;
-  opacity: 0.35;
-  animation: scanLines 4s linear infinite;
-}
-
 .hero-icon {
   width: 250px;
   height: auto;
@@ -301,9 +241,9 @@
   z-index: 1;
   width: 250px;
   height: 250px;
-  border: 1px solid rgba(126, 241, 213, 0.16);
+  border: 1px solid rgba(96, 165, 250, 0.16);
   border-radius: 50%;
-  background: conic-gradient(from 0deg, transparent 0deg, rgba(126, 241, 213, 0.22) 35deg, transparent 70deg);
+  background: conic-gradient(from 0deg, transparent 0deg, rgba(96, 165, 250, 0.22) 35deg, transparent 70deg);
   animation: radarRotate 5s linear infinite;
 }
 
@@ -312,7 +252,7 @@
   z-index: 1;
   width: 92px;
   height: 92px;
-  border: 1px solid rgba(126, 241, 213, 0.5);
+  border: 1px solid rgba(96, 165, 250, 0.5);
   border-radius: 50%;
   opacity: 0;
   animation: signalExpand 3.4s ease-out infinite;
@@ -327,8 +267,8 @@
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  background: #7ef1d5;
-  box-shadow: 0 0 0 4px rgba(126, 241, 213, 0.12), 0 0 12px #7ef1d5;
+  background: #60a5fa;
+  box-shadow: 0 0 0 4px rgba(96, 165, 250, 0.12), 0 0 12px #60a5fa;
   animation: nodeBlink 1.8s ease-in-out infinite;
 }
 
@@ -360,8 +300,8 @@
 }
 
 .uav-light {
-  fill: #b6f2e6;
-  filter: drop-shadow(0 0 7px #7ef1d5);
+  fill: #bfdbfe;
+  filter: drop-shadow(0 0 7px #60a5fa);
   animation: beaconPulse 1.8s ease-in-out infinite;
 }
 
@@ -375,7 +315,7 @@
   position: absolute;
   width: 245px;
   height: 110px;
-  border: 1px dashed rgba(126, 241, 213, 0.5);
+  border: 1px dashed rgba(96, 165, 250, 0.5);
   border-left-color: transparent;
   border-bottom-color: transparent;
   border-radius: 50%;
@@ -416,7 +356,7 @@
 .uav-status--bottom {
   right: 28px;
   bottom: 28px;
-  color: #7ef1d5;
+  color: #60a5fa;
 }
 
 .uav-telemetry {
@@ -451,7 +391,7 @@
   display: block;
   width: 70%;
   height: 100%;
-  background: #7ef1d5;
+  background: #60a5fa;
   animation: telemetryBar 1.4s ease-in-out infinite alternate;
 }
 
@@ -927,7 +867,7 @@
   margin: 0;
   border: 1px solid var(--border-light);
   border-radius: var(--radius-lg);
-  background: #dce5df;
+  background: #dbeafe;
   box-shadow: var(--shadow-sm);
 }
 
@@ -962,19 +902,9 @@
 
 /* Join Section */
 .join-section {
-  background: linear-gradient(135deg, var(--primary) 0%, #2B5278 100%);
+  background: var(--primary);
   position: relative;
   overflow: hidden;
-}
-
-.join-section::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background-image: 
-    linear-gradient(rgba(59, 130, 246, 0.03) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(59, 130, 246, 0.03) 1px, transparent 1px);
-  background-size: 40px 40px;
 }
 
 .join-card {

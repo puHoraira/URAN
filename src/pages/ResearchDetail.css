@@ -1,11 +1,11 @@
 .research-detail-header {
   padding: clamp(3rem, 8vw, 6rem) 0;
-  background: linear-gradient(135deg, var(--primary) 0%, #1b4d63 100%);
+  background: var(--primary);
   color: var(--text-inverse);
 }
 
 .research-detail-header--current {
-  background: linear-gradient(135deg, #0f4d4b 0%, #1b5963 100%);
+  background: var(--primary);
 }
 
 .research-detail-header__content {
@@ -15,7 +15,7 @@
 .research-detail-back {
   display: inline-flex;
   margin-bottom: var(--space-2xl);
-  color: #c9e7e4;
+  color: #dbeafe;
   font-size: 0.9rem;
   font-weight: 600;
 }
@@ -30,7 +30,7 @@
   align-items: center;
   gap: var(--space-md);
   margin-bottom: var(--space-lg);
-  color: #c9e7e4;
+  color: #dbeafe;
   font-family: var(--font-mono);
   font-size: 0.72rem;
   letter-spacing: 0.08em;
@@ -55,7 +55,7 @@
 .research-detail-header p {
   max-width: 780px;
   margin: 0;
-  color: #d8e6e8;
+  color: #dbeafe;
   font-size: 1.15rem;
   line-height: 1.75;
 }

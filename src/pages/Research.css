@@ -5,7 +5,7 @@
 /* Research Header */
 .research-header {
   position: relative;
-  background: linear-gradient(135deg, var(--primary) 0%, #2B5278 100%);
+  background: var(--primary);
   padding: clamp(4rem, 10vw, 6rem) 0 clamp(3rem, 8vw, 5rem);
   overflow: hidden;
 }
@@ -14,16 +14,6 @@
   position: absolute;
   inset: 0;
   z-index: 0;
-}
-
-.research-grid {
-  position: absolute;
-  inset: 0;
-  background-image: 
-    linear-gradient(rgba(59, 130, 246, 0.05) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(59, 130, 246, 0.05) 1px, transparent 1px);
-  background-size: 40px 40px;
-  mask-image: radial-gradient(ellipse 80% 50% at 50% 50%, black 40%, transparent 100%);
 }
 
 .research-header-content {
@@ -126,7 +116,7 @@
   left: 0;
   width: 6px;
   height: 0;
-  background: linear-gradient(180deg, var(--accent) 0%, var(--accent-light) 100%);
+  background: var(--accent);
   border-radius: var(--radius-2xl) 0 0 var(--radius-2xl);
   transition: height var(--transition-base);
 }
@@ -143,7 +133,7 @@
 
 .research-area-card--current {
   border-color: rgba(15, 118, 110, 0.45);
-  background: linear-gradient(120deg, #ffffff 0%, #f0faf7 100%);
+  background: #ffffff;
 }
 
 .research-area-card--current::before {
@@ -161,7 +151,7 @@
   font-family: var(--font-mono);
   font-size: 2.5rem;
   font-weight: 700;
-  background: linear-gradient(135deg, var(--accent) 0%, var(--accent-light) 100%);
+  background: var(--accent);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
