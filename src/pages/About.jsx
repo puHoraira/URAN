@@ -90,7 +90,6 @@ function About() {
                   </div>
                   
                   <h3>{student.name}</h3>
-                  <p className="student-role">{student.role}</p>
                   <p className="student-focus">{student.focus}</p>
 
                   <div className="student-socials">
@@ -131,7 +130,6 @@ function About() {
                 </div>
                 
                 <h3>{student.name}</h3>
-                <p className="student-role">{student.role}</p>
                 <p className="student-focus">{student.focus}</p>
 
                 <div className="student-socials">
@@ -180,7 +178,6 @@ function About() {
                   </div>
 
                   <h3>{officer.name}</h3>
-                  <p className="student-role">{officer.role}</p>
                   <p className="student-focus">{officer.focus}</p>
 
                   <div className="student-socials">

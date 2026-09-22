@@ -49,13 +49,6 @@ function Home() {
 
         <div className="container">
           <div className="hero-content">
-            <div className="hero-badge">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
-                <circle cx="12" cy="12" r="8" />
-                <circle cx="12" cy="12" r="2" />
-              </svg>
-              <span>URAN Research Group</span>
-            </div>
 
             <h1 className="hero-title">
               Building UAVs that can perceive, decide, and act in the real world.
