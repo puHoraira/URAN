@@ -44,7 +44,7 @@ export const technicalOfficers = [
 
 export const mscStudents = [
   {
-    name: 'Saif Hossain Mridul',
+    name: 'Saif Hossain',
     role: 'MSc Student',
     focus: 'UAV Navigation Systems',
     image: assetPath('/team/mridul.jpg'),
